@@ -6,6 +6,12 @@ CareConnect is a healthcare interoperability prototype that demonstrates how pat
 
 The project was developed to explore healthcare systems integration, interoperability standards and the role of APIs in digitally connected healthcare environments.
 
+## Dashboard
+
+![CareConnect Healthcare Interoperability Dashboard](docs/careconnect-dashboard.png)
+
+CareConnect retrieves patient resources from a FHIR R4 test server, transforms the returned healthcare data through a Node.js/Express integration layer, and presents selected information through a simplified dashboard.
+
 ---
 
 ## Project Overview
