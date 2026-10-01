@@ -8,7 +8,7 @@ The project was developed to explore healthcare systems integration, interoperab
 
 ## Dashboard
 
-![CareConnect Healthcare Interoperability Dashboard](docs/careconnect-dashboard.png)
+![CareConnect Healthcare Interoperability Dashboard](docs/careconnect.png)
 
 CareConnect retrieves patient resources from a FHIR R4 test server, transforms the returned healthcare data through a Node.js/Express integration layer, and presents selected information through a simplified dashboard.
 
