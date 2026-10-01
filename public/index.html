@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareConnect | Healthcare Interoperability Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>CareConnect</h1>
+            <p>Healthcare Interoperability Dashboard</p>
+        </div>
+
+        <div class="connection-status">
+            <span class="status-dot"></span>
+            FHIR Connected
+        </div>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Patient Overview</h2>
+            <p>
+                Patient information retrieved from a FHIR-compatible healthcare API
+                and transformed into a simplified clinical view.
+            </p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Patients Retrieved</p>
+                <h2 id="patient-count">--</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Integration Standard</p>
+                <h2>FHIR R4</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>API Status</p>
+                <h2 id="api-status">Connecting...</h2>
+            </div>
+        </section>
+
+        <section class="patient-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Patient Records</h2>
+                    <p>Data retrieved through the CareConnect interoperability API.</p>
+                </div>
+
+                <button id="refresh-button">Refresh Data</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Date of Birth</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="patient-table">
+
+                        <tr>
+                            <td colspan="4">Loading patient data...</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CareConnect — FHIR Healthcare Interoperability Prototype</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
